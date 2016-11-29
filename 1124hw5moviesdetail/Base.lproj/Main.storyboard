@@ -67,32 +67,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Tv-UX-0WS">
-                                <rect key="frame" x="16" y="112" width="343" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="電影名稱" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Tv-UX-0WS">
+                                <rect key="frame" x="34" y="112" width="311" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99441134450000002" green="1" blue="0.98500807950000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RNY-hj-j6o">
-                                <rect key="frame" x="103" y="186" width="168" height="196"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="簡介" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RNY-hj-j6o">
+                                <rect key="frame" x="34" y="150" width="311" height="132"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="p2" translatesAutoresizingMaskIntoConstraints="NO" id="5qa-BX-KWb">
-                                <rect key="frame" x="88" y="297" width="240" height="381"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ss2" translatesAutoresizingMaskIntoConstraints="NO" id="Uqg-eO-aem">
+                                <rect key="frame" x="34" y="261" width="294" height="365"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="thor1" translatesAutoresizingMaskIntoConstraints="NO" id="XnK-32-Hma">
-                                <rect key="frame" x="6" y="325" width="404" height="322"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ss1" translatesAutoresizingMaskIntoConstraints="NO" id="Gf9-BZ-g3W">
-                                <rect key="frame" x="88" y="282" width="240" height="365"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.43160055380000001" green="0.73794416240000005" blue="0.25664483890000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -100,10 +93,7 @@
                     <connections>
                         <outlet property="introducelabel" destination="RNY-hj-j6o" id="EKz-52-FDw"/>
                         <outlet property="label1" destination="8Tv-UX-0WS" id="7Uh-HG-nf9"/>
-                        <outlet property="p2view" destination="5qa-BX-KWb" id="Gic-sh-kGp"/>
-                        <outlet property="pic" destination="5qa-BX-KWb" id="UxZ-X9-4EO"/>
-                        <outlet property="ssview" destination="Gf9-BZ-g3W" id="dt2-zE-pPX"/>
-                        <outlet property="thorview" destination="XnK-32-Hma" id="CyG-ys-NeL"/>
+                        <outlet property="moviesImage" destination="Uqg-eO-aem" id="dQx-hr-C9L"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BD4-04-FdX" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -131,13 +121,11 @@
     </scenes>
     <resources>
         <image name="p1" width="338" height="458"/>
-        <image name="p2" width="339" height="455"/>
-        <image name="ss1" width="310" height="402"/>
+        <image name="ss2" width="328" height="483"/>
         <image name="ss3" width="327" height="470"/>
-        <image name="thor1" width="414" height="469"/>
         <image name="thor2" width="749" height="394"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="q7r-2f-iRr"/>
+        <segue reference="1xl-Im-r0k"/>
     </inferredMetricsTieBreakers>
 </document>

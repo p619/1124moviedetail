@@ -11,27 +11,29 @@ import UIKit
 class secondViewController: UIViewController {
 
     @IBOutlet weak var label1: UILabel!
-    var name:String!
+    var name:String! //
+    var imageview:UIImageView! //
+    @IBOutlet weak var moviesImage: UIImageView!
     
     @IBOutlet weak var introducelabel: UILabel!
-    var introduce:String!
+    var introduce:String! //
     
-    @IBOutlet weak var pic: UIImageView!
+   /* @IBOutlet weak var pic: UIImageView!
     
     @IBOutlet weak var p2view: UIImageView!
     
     @IBOutlet weak var thorview: UIImageView!
     
     @IBOutlet weak var ssview: UIImageView!
-    
-    
+    **/
+ 
+    //["name":"電影名稱","introduce":"簡介",imageview.image = UIImage(named: "ss1")
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.label1.text = name
         self.introducelabel.text = introduce
-        
         
         
         
